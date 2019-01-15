@@ -1,0 +1,3 @@
+rootProject.name = 'hybrid_fd_connect'
+
+include ':app'
