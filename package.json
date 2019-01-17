@@ -9,9 +9,12 @@
     "build-web": "react-scripts build"
   },
   "dependencies": {
+    "i18next": "^13.1.2",
+    "i18next-browser-languagedetector": "^2.2.4",
     "react": "16.6.3",
     "react-art": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-i18next": "^9.0.2",
     "react-native": "0.57.8",
     "react-native-web": "^0.10.0-alpha.2",
     "react-redux": "^6.0.0",

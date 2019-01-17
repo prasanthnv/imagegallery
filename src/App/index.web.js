@@ -8,17 +8,18 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import {Provider} from 'react-redux';
-import store from './Redux/Store'
-
+import { translate } from 'react-i18next';
 
 type Props = {};
-export default class App extends Component<Props> {
+class App extends Component<Props> {
   render() {
+    const { t, i18n } = this.props;
     return (
-     <Provider store={store}>
-       <div>Hello world</div>
-     </Provider>
+      <React.Fragment>
+       <div>{t('home.title') }</div>
+       <button onClick={() => i18n.changeLanguage('en')}>en</button>
+       <button onClick={() => i18n.changeLanguage('ml')}>ml</button>
+       </React.Fragment>
     );
   }
 }
@@ -41,3 +42,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+export default translate()(App);

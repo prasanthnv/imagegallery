@@ -1,4 +1,4 @@
-import {createStore,applyMiddleware,compose} from 'redux';
+import {createStore,applyMiddleware,compose,combineReducers} from 'redux';
 // import thunk from 'redux-thunk';
 import createSagaMiddleware from 'redux-saga'
 import * as reducers from '../Modules';
