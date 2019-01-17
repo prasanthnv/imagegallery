@@ -2,7 +2,7 @@ import i18next from 'i18next';
 import LngDetector from 'i18next-browser-languagedetector';
 
 import en from './locale/en'
-import ml from './locale/ml'
+import es from './locale/es'
 console.log(LngDetector)
 const options = {
     // order and from where user language should be detected
@@ -34,7 +34,7 @@ i18next.use(LngDetector)
         fallbackLng: 'en',                           // language to use
     resources: {
         en: {    "translation": en},
-        ml: {    "translation": ml}
+        es: {    "translation": es}
     },
     });
 

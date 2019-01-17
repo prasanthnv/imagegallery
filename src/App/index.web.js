@@ -9,7 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { translate } from 'react-i18next';
-
+import CounterContainer from './Containers/Counter'
 type Props = {};
 class App extends Component<Props> {
   render() {
@@ -17,8 +17,9 @@ class App extends Component<Props> {
     return (
       <React.Fragment>
        <div>{t('home.title') }</div>
-       <button onClick={() => i18n.changeLanguage('en')}>en</button>
-       <button onClick={() => i18n.changeLanguage('ml')}>ml</button>
+       <button onClick={() => i18n.changeLanguage('en')}>En</button>
+       <button onClick={() => i18n.changeLanguage('es')}>Es</button>
+       <CounterContainer />
        </React.Fragment>
     );
   }
