@@ -5,7 +5,6 @@ const initial_state = {
 }
 
 const reducer = (state = initial_state, action = {}) => {
-    console.log(state)
     switch (action.type) {
         // do reducer stuff
         case types.COUNT_UP:

@@ -9,18 +9,13 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { translate } from 'react-i18next';
-import CounterContainer from './Containers/Counter'
+import GalleryContainer from './Containers/Gallery'
 type Props = {};
 class App extends Component<Props> {
   render() {
     const { t, i18n } = this.props;
     return (
-      <React.Fragment>
-       <div>{t('home.title') }</div>
-       <button onClick={() => i18n.changeLanguage('en')}>En</button>
-       <button onClick={() => i18n.changeLanguage('es')}>Es</button>
-       <CounterContainer />
-       </React.Fragment>
+       <GalleryContainer />
     );
   }
 }

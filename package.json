@@ -1,12 +1,18 @@
 {
-  "name": "hybrid_fd_connect",
+  "name": "image_gallery",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "start-web": "react-scripts start",
+    "start-andriod": "react-native run-android",
     "build-web": "react-scripts build"
+  },
+  "rnpm": {
+    "assets": [
+      "./Assets/Fonts/"
+    ]
   },
   "dependencies": {
     "i18next": "^13.1.2",
